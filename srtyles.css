@@ -1,0 +1,229 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+}
+:root {
+	--textColor: rgb(103, 96, 87);
+}
+@font-face {
+	font-family: f;
+	src: url(MarckScript-Regular.ttf);
+}
+@font-face {
+	font-family: p;
+	src: url(Pangolin-Regular.ttf);
+}
+.bgc {
+	position: fixed;
+	height: 100vh;
+	z-index: -100;
+}
+.title {
+	overflow: hidden;
+	position: absolute;
+	font-family: f;
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	transform: translate(-50%, -0%);
+	animation: start 2s forwards;
+	opacity: 0.7;
+}
+.text {
+	font-size: 10vw;
+	white-space: nowrap;
+	color: var(--textColor);
+}
+.title2 {
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -0%);
+	font-size: 3.5vw;
+	font-family: p;
+	width: 60vw;
+	color: rgb(120, 107, 85);
+	text-align: center;
+}
+
+@keyframes start {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.8;
+	}
+}
+.bigtext {
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	transform: translate(-50%, -0%);
+	font-size: 3vw;
+	background-color: var(--textColor);
+	padding: 3vw;
+	width: 80vw;
+	min-height: 50vh;
+	height: auto;
+	border-radius: 1vw;
+	font-family: monospace;
+	color: rgb(58, 51, 39);
+	line-height: 2;
+	max-height: 80vh;
+	overflow: auto;
+	text-align: center;
+}
+.bigtextface {
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	transform: translate(-50%, -0%);
+	width: 80vw;
+	min-height: 50vh;
+	height: auto;
+	background-color: rgb(131, 115, 87);
+	z-index: 54543;
+	border-radius: 1vw;
+	animation: opac 3s infinite;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 6vw;
+	font-family: p;
+	color: whitesmoke;
+}
+@keyframes opac {
+	0% {
+		opacity: 0.7;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.7;
+	}
+}
+
+.foto1Parent {
+	transform: translate(-50%, 0);
+}
+.foto1 {
+	width: 40vw;
+	height: auto;
+	padding: 10% 10% 30% 10%;
+	background-color: hsl(33, 13%, 83%);
+	animation: infinite rotate 3s;
+}
+.foto1text {
+	position: absolute;
+	left: 50vw;
+	width: 30vw;
+	font-size: 3vw;
+	font-family: f;
+	color: var(--textColor);
+	text-align: right;
+	line-height: 1.5;
+}
+@keyframes rotate {
+	0% {
+		transform: rotate(-5deg);
+	}
+	50% {
+		transform: rotate(5deg);
+	}
+	100% {
+		transform: rotate(-5deg);
+	}
+}
+.galery {
+	position: absolute;
+	left: 50%;
+	top: 250%;
+	transform: translate(-50%, -0%);
+}
+.foto2 {
+	width: 40vw;
+	height: auto;
+	padding: 10% 10% 30% 10%;
+	background-color: hsl(33, 13%, 83%);
+	animation: infinite rotatee 4s;
+}
+.foto2text {
+	position: absolute;
+	left: -40vw;
+	width: 30vw;
+	font-size: 3vw;
+	font-family: f;
+	color: var(--textColor);
+	line-height: 1.5;
+}
+.foto2Parent {
+	margin-top: 50%;
+	transform: translate(50%, 0);
+}
+.foto {
+	box-shadow: 5px 5px 10px 0px rgb(80, 76, 64);
+}
+@keyframes rotatee {
+	0% {
+		transform: rotate(5deg);
+	}
+	50% {
+		transform: rotate(-5deg);
+	}
+	100% {
+		transform: rotate(5deg);
+	}
+}
+
+.video1 {
+	position: absolute;
+	left: 50%;
+	top: 150%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	width: 11vw;
+	height: 12vw;
+}
+
+.st0 {
+	fill: none;
+	stroke: var(--textColor);
+	stroke-width: 6;
+	stroke-miterlimit: 10;
+	stroke-dasharray: 100; /* Длина контура */
+	stroke-dashoffset: 100; /* Исходная позиция */
+	/* animation: draw 2s ease forwards; Анимация рисования */
+}
+
+@keyframes draw {
+	to {
+		stroke-dashoffset: 0; /* Рисование линии до конца */
+	}
+}
+.down {
+	width: 15vw;
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -0%);
+}
+.down1 {
+	width: 15vw;
+	position: absolute;
+	left: 50%;
+	top: 200%;
+	transform: translate(-50%, -0%);
+}
+
+.tiktokimg {
+	position: absolute;
+	width: 10vw;
+	left: 50%;
+	top: 350%;
+	transform: translate(-50%, -0%);
+	border-radius: 10px;
+	padding: 0 0 10% 0;
+}
